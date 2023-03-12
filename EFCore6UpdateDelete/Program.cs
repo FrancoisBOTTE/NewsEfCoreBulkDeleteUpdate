@@ -6,8 +6,6 @@ using Microsoft.Extensions.Options;
 var builder = WebApplication.CreateBuilder(args);
 
 
-//ccMw624v6BTh2M
-
 // Add services to the container.
 builder.Services.AddDbContext<ContactDbContext>(option =>
     option.UseSqlServer(builder.Configuration.GetConnectionString("DBConnection"))
